@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<ImageView
+    android:id="@+id/iv_header_04group_portrait"
+    android:layout_width="240px"
+    android:layout_height="240px"
+    android:layout_marginTop="33px"
+    android:layout_marginLeft="33px"
+    android:layout_marginBottom="43px"
+
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+    <ImageView
+        android:id="@+id/iv_header_04group_play"
+        android:layout_width="96px"
+        android:layout_height="96px"
+        android:layout_marginLeft="72px"
+        android:layout_marginTop="72px"
+        android:src="@drawable/ic_card_vod_play"
+        app:layout_constraintLeft_toLeftOf="@id/iv_header_04group_portrait"
+        app:layout_constraintTop_toTopOf="@id/iv_header_04group_portrait"
+        />
+
+    <ImageView
+        android:id="@+id/iv_header_04group_miaodong"
+        android:layout_width="96px"
+        android:layout_height="30px"
+        android:layout_marginTop="40px"
+        android:src="@drawable/label_miaodongbaike"
+        app:layout_constraintLeft_toLeftOf="@id/iv_header_04group_play"
+        app:layout_constraintTop_toBottomOf="@id/iv_header_04group_play"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#b3f1f1f1"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_header_04group_miaodong"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_header_04group_miaodong"
+        app:layout_constraintTop_toTopOf="@+id/iv_header_04group_miaodong"
+        app:layout_constraintRight_toRightOf="@+id/iv_header_04group_miaodong"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_header_04group_name"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36px"
+        android:text="dsadasdhulfdhasdhs"
+        app:layout_constraintLeft_toRightOf="@+id/iv_header_04group_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_header_04group_portrait"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="36px"
+
+        android:textSize="36px"
+        android:textColor="#f1f1f1"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:gravity="start|center_vertical"
+        android:ellipsize="end"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_header_04group_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30px"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_header_04group_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_04group_name"
+        app:layout_constraintRight_toRightOf="@+id/tv_header_04group_name"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_header_04group_portrait"
+
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="30px"
+        android:textColor="#ccf1f1f1"
+        android:text="sguiduasdasuhdshd"
+        android:lineSpacingMultiplier="1.5"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_header_04group_datafrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="数据来自"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_04group_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/iv_header_04group_datafromimg"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10px"
+        android:textSize="20px"
+        android:textColor="#99f1f1f1"
+        android:gravity="end|center_vertical"
+
+
+        />
+    <ImageView
+        android:id="@+id/iv_header_04group_datafromimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/tv_header_04group_datafrom"
+        app:layout_constraintRight_toRightOf="@+id/tv_header_04group_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header_04group_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/label_damai"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hisense.pagedemo.ui.SelectConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scl_rvitem_1801_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_rvitem_1801_title"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:textSize="48px"
+
+
+
+        android:gravity="start|center_vertical"
+        android:ellipsize="end"
+        android:textColor="#f1f1f1"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/prv_rvitem_1801_actor"
+        android:layout_marginBottom="10dp"
+        />
+    <com.hisense.pagedemo.ui.PageRecyclerView
+        android:id="@+id/prv_rvitem_1801_actor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rvitem_1801_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+
+
+</com.hisense.pagedemo.ui.SelectConstraintLayout>

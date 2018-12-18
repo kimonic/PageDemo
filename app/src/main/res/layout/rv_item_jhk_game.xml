@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bv_jhk_app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_jhk_app_movie"
+        android:layout_width="@dimen/iv_jhk_app_movie_width"
+        android:layout_height="@dimen/iv_jhk_app_movie_height"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_jhk_app_flag"
+        android:layout_width="@dimen/iv_jhk_app_flag_width"
+        android:layout_height="@dimen/iv_jhk_app_flag_height"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_app_movie" />
+
+    <TextView
+        android:id="@+id/tv_jhk_app_review"
+        android:layout_width="@dimen/tv_jhk_app_review_width"
+        android:layout_height="@dimen/tv_jhk_app_review_height"
+        android:layout_marginTop="@dimen/tv_jhk_app_review_margin_top"
+        android:layout_marginEnd="@dimen/tv_jhk_app_review_margin_end"
+        android:layout_marginRight="@dimen/tv_jhk_app_review_margin_end"
+        android:background="#000000"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:text="4.6"
+        android:textColor="#f1f1f1"
+
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_app_movie" />
+
+    <View
+        android:id="@+id/tv_jhk_app_bac"
+        android:layout_width="@dimen/tv_jhk_app_bac_width"
+        android:layout_height="@dimen/tv_jhk_app_bac_height"
+        android:background="@drawable/rv_item_0801_group_bac"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintRight_toRightOf="@id/iv_jhk_app_movie" />
+
+    <TextView
+        android:id="@+id/tv_jhk_app_bottom_1"
+        android:layout_width="@dimen/tv_jhk_app_bottom_1_width"
+        android:layout_height="@dimen/tv_jhk_app_bottom_1_height"
+        android:layout_marginLeft="@dimen/tv_jhk_app_bottom_1_margin_left"
+        android:layout_marginRight="@dimen/tv_jhk_app_bottom_1_margin_right"
+        android:layout_marginBottom="@dimen/tv_jhk_app_bottom_1_margin_bottom"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textSize="@dimen/tv_jhk_app_bottom_1_text_size"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintRight_toLeftOf="@id/tv_jhk_app_bottom_2" />
+
+    <TextView
+        android:id="@+id/tv_jhk_app_bottom_2"
+        android:layout_width="@dimen/tv_jhk_app_bottom_2_width"
+        android:layout_height="@dimen/tv_jhk_app_bottom_2_height"
+        android:layout_marginEnd="@dimen/tv_jhk_app_bottom_2_margin_end"
+        android:layout_marginRight="@dimen/tv_jhk_app_bottom_2_margin_end"
+        android:layout_marginBottom="@dimen/tv_jhk_app_bottom_2_margin_bottom"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="right|center_vertical"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/tv_jhk_app_bottom_2_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintLeft_toRightOf="@+id/tv_jhk_app_bottom_1"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_app_movie" />
+
+    <TextView
+        android:id="@+id/tv_jhk_app_name"
+        android:layout_width="@dimen/tv_jhk_app_name_width"
+        android:layout_height="@dimen/tv_jhk_app_name_height"
+        android:layout_marginTop="@dimen/tv_jhk_app_name_margin_top"
+        android:layout_marginBottom="@dimen/tv_jhk_app_name_margin_bottom"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textColor="#F1F1F1"
+        android:textSize="@dimen/tv_jhk_app_name_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintTop_toBottomOf="@id/iv_jhk_app_movie" />
+
+
+    <View
+        android:id="@+id/tv_common_border"
+        android:layout_width="@dimen/tv_common_border_width"
+        android:layout_height="@dimen/tv_common_border_height"
+        android:background="@drawable/rv_item_0801_group_border"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_app_movie" />
+
+    <TextView
+        android:id="@+id/tv_jhk_app_position"
+        android:layout_width="@dimen/tv_jhk_app_position_width"
+        android:layout_height="@dimen/tv_jhk_app_position_height"
+        android:layout_marginStart="@dimen/tv_jhk_app_position_margin_start"
+        android:layout_marginLeft="@dimen/tv_jhk_app_position_margin_start"
+        android:layout_marginTop="@dimen/tv_jhk_app_position_margin_top"
+        android:background="@drawable/rv_item_0801_group_position"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_app_movie"
+        app:layout_constraintTop_toTopOf="@id/iv_jhk_app_movie" />
+</android.support.constraint.ConstraintLayout>

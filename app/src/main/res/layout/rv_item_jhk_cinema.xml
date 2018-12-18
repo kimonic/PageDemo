@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scl_jhk_cinama"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/iv_jhk_cinama_portrait"
+        android:layout_width="@dimen/iv_jhk_cinama_portrait_width"
+        android:layout_height="@dimen/iv_jhk_cinama_portrait_height"
+        android:layout_marginLeft="@dimen/iv_jhk_cinama_portrait_margin_left"
+        android:layout_marginRight="@dimen/iv_jhk_cinama_portrait_margin_right"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_jhk_cinama_name"
+        android:layout_width="@dimen/tv_jhk_cinama_name_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_jhk_cinama_name_margin_top"
+        android:layout_marginBottom="@dimen/tv_jhk_cinama_name_margin_bottom"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_cinama_name_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_cinama_portrait"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_cinama_portrait"
+        app:layout_constraintTop_toBottomOf="@+id/iv_jhk_cinama_portrait" />
+
+    <TextView
+        android:id="@+id/tv_jhk_cinama_review"
+        android:layout_width="@dimen/tv_jhk_cinama_review_width"
+        android:layout_height="@dimen/tv_jhk_cinama_review_height"
+
+        android:layout_marginTop="@dimen/tv_jhk_cinama_review_margin_top"
+        android:layout_marginEnd="@dimen/tv_jhk_cinama_review_margin_end"
+        android:layout_marginRight="@dimen/tv_jhk_cinama_review_margin_end"
+        android:background="#80000000"
+        android:gravity="center"
+
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_cinama_review_text_size"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_cinama_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_cinama_portrait" />
+
+    <View
+        android:id="@+id/tv_common_border"
+        android:layout_width="@dimen/tv_common_border_width"
+        android:layout_height="@dimen/tv_common_border_height"
+        android:background="@drawable/rv_item_0801_group_border"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_cinama_portrait"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_cinama_portrait"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_cinama_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_cinama_portrait" />
+
+    <TextView
+        android:id="@+id/tv_jhk_cinama_position"
+        android:layout_width="@dimen/tv_jhk_cinama_position_width"
+        android:layout_height="@dimen/tv_jhk_cinama_position_height"
+        android:layout_marginStart="@dimen/tv_jhk_cinama_position_margin_start"
+
+        android:layout_marginLeft="@dimen/tv_jhk_cinama_position_margin_start"
+
+        android:layout_marginTop="@dimen/tv_jhk_cinama_position_margin_top"
+        android:background="@drawable/rv_item_0901_group_position"
+        android:gravity="center"
+
+
+        android:textColor="#055c66"
+        android:textSize="@dimen/tv_jhk_cinama_position_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_cinama_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_cinama_portrait" />
+
+
+</android.support.constraint.ConstraintLayout>

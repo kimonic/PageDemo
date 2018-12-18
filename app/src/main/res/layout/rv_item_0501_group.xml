@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hisense.pagedemo.ui.SelectConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scl_rvitem_0501_group"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_rcitem_0501_group_moview"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/iv_rcitem_0501_group_flag"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintTop_toTopOf="@+id/iv_rcitem_0501_group_moview"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_rvitem_0501_group_review"
+        android:layout_width="24dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="#000000"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:text="4.6"
+        android:textColor="#f1f1f1"
+
+        app:layout_constraintRight_toRightOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintTop_toTopOf="@+id/iv_rcitem_0501_group_moview" />
+
+
+
+
+    <TextView
+        android:id="@+id/tv_rvitem_0501_group_name"
+        android:layout_width="0dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="20dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textColor="#F1F1F1"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintRight_toRightOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintTop_toBottomOf="@id/iv_rcitem_0501_group_moview" />
+
+
+    <View
+        android:id="@+id/tv_common_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rv_item_0801_group_border"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintRight_toRightOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintTop_toTopOf="@+id/iv_rcitem_0501_group_moview" />
+
+    <TextView
+        android:id="@+id/tv_rvitem_0501_group_position"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginLeft="149dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/rv_item_0801_group_position"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+
+        app:layout_constraintLeft_toLeftOf="@+id/iv_rcitem_0501_group_moview"
+        app:layout_constraintTop_toTopOf="@id/iv_rcitem_0501_group_moview" />
+</com.hisense.pagedemo.ui.SelectConstraintLayout>

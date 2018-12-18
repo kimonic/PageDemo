@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+
+        android:id="@+id/iv_header_18_movieimg"
+        android:layout_width="102dp"
+        android:layout_height="144dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/tv_rv_header_18_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:textColor="#f1f1f1"
+        android:textSize="40px"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_rv_header_18_content"
+        app:layout_constraintTop_toTopOf="@+id/iv_header_18_movieimg"
+
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_rv_header_18_review"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:textColor="#f5a623"
+        android:textSize="48px"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/tv_rv_header_18_name"
+        app:layout_constraintTop_toTopOf="@+id/iv_header_18_movieimg"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/tv_rv_header_18_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:textColor="#f1f1f1"
+        android:textSize="30px"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_rv_header_18_content"
+        app:layout_constraintRight_toRightOf="@+id/tv_rv_header_18_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rv_header_18_name"
+
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_rv_header_18_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="18dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="4"
+        android:textColor="#f1f1f1"
+        android:textSize="30px"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_header_18_movieimg"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/iv_header_18_movieimg"
+        app:layout_constraintRight_toLeftOf="@id/iv_rv_header_18_qrcode"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rv_header_18_type"
+
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <ImageView
+        android:id="@+id/iv_rv_header_18_qrcode"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rv_header_18_sweepcode"
+
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/tv_rv_header_18_sweepcode"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="手机扫码下单"
+        android:textColor="#ccf1f1f1"
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_rv_header_18_qrcode"
+        app:layout_constraintRight_toRightOf="@+id/iv_rv_header_18_qrcode"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+    <ImageView
+        android:id="@+id/iv_rv_header_18_datafrom"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="6dp"
+        android:background="#a3a3"
+        app:layout_constraintRight_toRightOf="@+id/iv_rv_header_18_qrcode"
+        app:layout_constraintTop_toBottomOf="@+id/iv_rv_header_18_qrcode"
+
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_rv_header_18_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:text="数据来自"
+        android:textColor="#f1f1f1"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_rv_header_18_datafrom"
+        app:layout_constraintRight_toLeftOf="@+id/iv_rv_header_18_datafrom"
+
+
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

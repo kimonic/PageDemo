@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+
+        android:id="@+id/iv_jhk_mdetails_movieimg"
+        android:layout_width="@dimen/iv_jhk_mdetails_movieimg_width"
+        android:layout_height="@dimen/iv_jhk_mdetails_movieimg_height"
+        android:layout_marginStart="@dimen/iv_jhk_mdetails_movieimg_margin_left"
+        android:layout_marginLeft="@dimen/iv_jhk_mdetails_movieimg_margin_left"
+        android:layout_marginTop="@dimen/iv_jhk_mdetails_movieimg_margin_top"
+        android:layout_marginBottom="@dimen/iv_jhk_mdetails_movieimg_margin_bottom"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_jhk_mdetails_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tv_jhk_mdetails_name_height"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="start|center_vertical"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_mdetails_name_text_size"
+
+
+        app:layout_constraintLeft_toLeftOf="@+id/tv_jhk_mdetails_content"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_mdetails_movieimg"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tv_jhk_mdetails_review"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tv_jhk_mdetails_review_height"
+        android:layout_marginStart="@dimen/tv_jhk_mdetails_review_margin_left"
+        android:layout_marginLeft="@dimen/tv_jhk_mdetails_review_margin_left"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="start|center_vertical"
+        android:textColor="#f5a623"
+        android:textSize="@dimen/tv_jhk_mdetails_review_text_size"
+        android:textStyle="bold"
+
+        app:layout_constraintLeft_toRightOf="@+id/tv_jhk_mdetails_name"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_mdetails_movieimg" />
+
+    <TextView
+        android:id="@+id/tv_jhk_mdetails_type"
+        android:layout_width="@dimen/tv_jhk_mdetails_type_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_jhk_mdetails_type_margin_top"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_mdetails_type_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_jhk_mdetails_content"
+
+
+        app:layout_constraintRight_toRightOf="@+id/tv_jhk_mdetails_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_mdetails_name"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_jhk_mdetails_content"
+        android:layout_width="@dimen/tv_jhk_mdetails_content_width"
+        android:layout_height="@dimen/tv_jhk_mdetails_content_height"
+        android:layout_marginLeft="@dimen/tv_jhk_mdetails_content_margin_left"
+        android:layout_marginTop="@dimen/tv_jhk_mdetails_content_margin_top"
+        android:layout_marginRight="@dimen/tv_jhk_mdetails_content_margin_right"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:lineSpacingMultiplier="1.2"
+        android:maxLines="4"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_mdetails_content_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_mdetails_movieimg"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/iv_jhk_mdetails_movieimg"
+
+
+        app:layout_constraintRight_toLeftOf="@id/iv_jhk_mdetails_qrcode"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_mdetails_type" />
+
+    <ImageView
+        android:id="@+id/iv_jhk_mdetails_qrcode"
+        android:layout_width="@dimen/iv_jhk_mdetails_qrcode_width"
+        android:layout_height="@dimen/iv_jhk_mdetails_qrcode_height"
+        android:layout_marginTop="@dimen/iv_jhk_mdetails_qrcode_margin_top"
+        android:layout_marginEnd="@dimen/iv_jhk_mdetails_qrcode_margi_right"
+        android:layout_marginRight="@dimen/iv_jhk_mdetails_qrcode_margi_right"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_mdetails_sweepcode" />
+
+    <TextView
+        android:id="@+id/tv_jhk_mdetails_sweepcode"
+        android:layout_width="@dimen/tv_jhk_mdetails_sweepcode_width"
+        android:layout_height="@dimen/tv_jhk_mdetails_sweepcode_height"
+        android:layout_marginTop="@dimen/tv_jhk_mdetails_sweepcode_margin_top"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:text="手机扫码下单"
+        android:textColor="#ccf1f1f1"
+        android:textSize="@dimen/tv_jhk_mdetails_sweepcode_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_mdetails_qrcode"
+
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_mdetails_qrcode"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_jhk_mdetails_datafrom"
+        android:layout_width="@dimen/iv_jhk_mdetails_datafrom_width"
+        android:layout_height="@dimen/iv_jhk_mdetails_datafrom_height"
+        android:layout_marginTop="@dimen/iv_jhk_mdetails_datafrom_margin_top"
+        android:background="#a3a3"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_mdetails_qrcode"
+        app:layout_constraintTop_toBottomOf="@+id/iv_jhk_mdetails_qrcode"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_jhk_mdetails_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/tv_jhk_mdetails_from_margin_right"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="数据来自"
+        android:textColor="#f1f1f1"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_mdetails_datafrom"
+        app:layout_constraintRight_toLeftOf="@+id/iv_jhk_mdetails_datafrom" />
+
+
+</android.support.constraint.ConstraintLayout>

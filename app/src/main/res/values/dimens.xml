@@ -1,0 +1,205 @@
+<resources>
+    <dimen name="ass">0px</dimen>
+
+    <!--rv_item_jhk_game-->
+    <dimen name="iv_jhk_app_movie_width">320px</dimen>
+    <dimen name="iv_jhk_app_movie_height">180px</dimen>
+
+    <dimen name="iv_jhk_app_flag_width">84px</dimen>
+    <dimen name="iv_jhk_app_flag_height">84px</dimen>
+
+    <dimen name="tv_jhk_app_review_width">48px</dimen>
+    <dimen name="tv_jhk_app_review_height">32px</dimen>
+    <dimen name="tv_jhk_app_review_margin_top">12px</dimen>
+    <dimen name="tv_jhk_app_review_margin_end">12px</dimen>
+
+    <dimen name="tv_jhk_app_bac_width">0px</dimen>
+    <dimen name="tv_jhk_app_bac_height">30px</dimen>
+
+    <dimen name="tv_jhk_app_bottom_1_width">0px</dimen>
+    <dimen name="tv_jhk_app_bottom_1_height">32px</dimen>
+    <dimen name="tv_jhk_app_bottom_1_margin_left">12px</dimen>
+    <dimen name="tv_jhk_app_bottom_1_margin_bottom">12px</dimen>
+    <dimen name="tv_jhk_app_bottom_1_margin_right">12px</dimen>
+    <dimen name="tv_jhk_app_bottom_1_text_size">24px</dimen>
+
+    <dimen name="tv_jhk_app_bottom_2_width">0px</dimen>
+    <dimen name="tv_jhk_app_bottom_2_height">32px</dimen>
+    <dimen name="tv_jhk_app_bottom_2_margin_end">12px</dimen>
+    <dimen name="tv_jhk_app_bottom_2_margin_bottom">12px</dimen>
+    <dimen name="tv_jhk_app_bottom_2_text_size">24px</dimen>
+
+    <dimen name="tv_jhk_app_name_width">24px</dimen>
+    <dimen name="tv_jhk_app_name_height">24px</dimen>
+    <dimen name="tv_jhk_app_name_margin_top">24px</dimen>
+    <dimen name="tv_jhk_app_name_margin_bottom">24px</dimen>
+    <dimen name="tv_jhk_app_name_text_size">24px</dimen>
+
+    <dimen name="tv_common_border_width">0px</dimen>
+    <dimen name="tv_common_border_height">0px</dimen>
+
+    <dimen name="tv_jhk_app_position_width">44px</dimen>
+    <dimen name="tv_jhk_app_position_height">44px</dimen>
+    <dimen name="tv_jhk_app_position_margin_start">298px</dimen>
+    <dimen name="tv_jhk_app_position_margin_top">298px</dimen>
+    <dimen name="tv_jhk_app_position_text_size">68px</dimen>
+    <dimen name="tv_jhk_app_position">24px</dimen>
+
+    <!--rv_item_jhk_actor-->
+    <dimen name="iv_jhk_actor_portrait_width">180px</dimen>
+    <dimen name="iv_jhk_actor_portrait_height">180px</dimen>
+
+    <dimen name="tv_jhk_actor_name_width">180px</dimen>
+    <dimen name="tv_jhk_actor_name_margin_top">12px</dimen>
+    <dimen name="tv_jhk_actor_name_text_size">30px</dimen>
+
+    <dimen name="tv_jhk_actor_role_width">180px</dimen>
+    <dimen name="tv_jhk_actor_role_margin_top">12px</dimen>
+    <dimen name="tv_jhk_actor_role_margin_bottom">72px</dimen>
+    <dimen name="tv_jhk_actor_role_text_size">24px</dimen>
+
+    <dimen name="tv_jhk_actor_position_width">72px</dimen>
+    <dimen name="tv_jhk_actor_position_height">72px</dimen>
+    <dimen name="tv_jhk_actor_position_margin_start">150px</dimen>
+    <dimen name="tv_jhk_actor_position_margin_top">54px</dimen>
+    <dimen name="tv_jhk_actor_position_text_size">24px</dimen>
+
+    <!--<dimen name="tv_common_border_width">24px</dimen>-->
+    <!--<dimen name="tv_common_border_height">24px</dimen>-->
+
+    <!--rv_item_jhk_cinema-->
+    <dimen name="iv_jhk_cinama_portrait_width">215px</dimen>
+    <dimen name="iv_jhk_cinama_portrait_height">300px</dimen>
+    <dimen name="iv_jhk_cinama_portrait_margin_left">24px</dimen>
+    <dimen name="iv_jhk_cinama_portrait_margin_right">24px</dimen>
+
+    <dimen name="tv_jhk_cinama_name_width">180px</dimen>
+    <dimen name="tv_jhk_cinama_name_margin_top">12px</dimen>
+    <dimen name="tv_jhk_cinama_name_margin_bottom">48px</dimen>
+    <dimen name="tv_jhk_cinama_name_text_size">30px</dimen>
+
+
+    <dimen name="tv_jhk_cinama_review_width">48px</dimen>
+    <dimen name="tv_jhk_cinama_review_height">32px</dimen>
+    <dimen name="tv_jhk_cinama_review_margin_top">12px</dimen>
+    <dimen name="tv_jhk_cinama_review_margin_end">12px</dimen>
+    <dimen name="tv_jhk_cinama_review_text_size">24px</dimen>
+
+    <dimen name="tv_jhk_cinama_position_width">62px</dimen>
+    <dimen name="tv_jhk_cinama_position_height">72px</dimen>
+    <dimen name="tv_jhk_cinama_position_margin_start">184px</dimen>
+    <dimen name="tv_jhk_cinama_position_margin_top">114px</dimen>
+    <dimen name="tv_jhk_cinama_position_text_size">24px</dimen>
+
+    <!--rv_item_jhk_taobao-->
+    <dimen name="tv_common_border_taobao_margin_end">30px</dimen>
+
+    <dimen name="iv_jhk_taobao_portrait_width">210px</dimen>
+    <dimen name="iv_jhk_taobao_portrait_height">210px</dimen>
+
+    <dimen name="tv_jhk_taobao_goodsname_width">0px</dimen>
+    <dimen name="tv_jhk_taobao_goodsname_margin_start">12px</dimen>
+    <dimen name="tv_jhk_taobao_goodsname_margin_end">60px</dimen>
+    <dimen name="tv_jhk_taobao_goodsname_text_size">30px</dimen>
+
+    <dimen name="tv_jhk_taobao_type_width">0px</dimen>
+    <dimen name="tv_jhk_taobao_type_margin_top">6px</dimen>
+    <dimen name="tv_jhk_taobao_type_text_size">24px</dimen>
+
+    <dimen name="tv_jhk_taobao_price_width">0px</dimen>
+    <dimen name="tv_jhk_taobao_price_margin_top">9px</dimen>
+    <dimen name="tv_jhk_taobao_price_text_size">30px</dimen>
+
+
+    <dimen name="tv_jhk_taobao_free_margin_top">20px</dimen>
+    <dimen name="tv_jhk_taobao_free_text_size">6px</dimen>
+
+    <dimen name="tv_jhk_taobao_shoppinginfo_width">0px</dimen>
+    <dimen name="tv_jhk_taobao_shoppinginfo_margin_top">6px</dimen>
+    <dimen name="tv_jhk_taobao_shoppinginfo_text_size">24px</dimen>
+
+    <dimen name="tv_jhk_taobao_position_width">0px</dimen>
+    <dimen name="tv_jhk_taobao_position_margin_top">75px</dimen>
+    <dimen name="tv_jhk_taobao_position_height">0px</dimen>
+    <dimen name="tv_jhk_taobao_position_text_size">30px</dimen>
+
+    <!--rv_item_jhk_juhaokan-->
+
+
+    <dimen name="iv_jhk_juhaokan_goodsimag_width">320px</dimen>
+    <dimen name="iv_jhk_juhaokan_goodsimag_height">180px</dimen>
+
+
+    <dimen name="tv_jhk_juhaokan_price_width">140px</dimen>
+    <dimen name="tv_jhk_juhaokan_price_height">36px</dimen>
+    <dimen name="tv_jhk_juhaokan_price_margin_left">10px</dimen>
+    <dimen name="tv_jhk_juhaokan_price_margin_right">10px</dimen>
+    <dimen name="tv_jhk_juhaokan_price_margin_bottom">10px</dimen>
+
+    <dimen name="tv_jhk_juhaokan_originalprice_width">0px</dimen>
+    <dimen name="tv_jhk_juhaokan_originalprice_margin_right">12px</dimen>
+    <dimen name="tv_jhk_juhaokan_originalprice_margin_left">12px</dimen>
+    <dimen name="tv_jhk_juhaokan_originalprice_margin_bottom">6px</dimen>
+    <dimen name="tv_jhk_juhaokan_originalprice_text_size">22px</dimen>
+
+
+    <dimen name="tv_jhk_juhaokan_goodsname_width">0px</dimen>
+    <dimen name="tv_jhk_juhaokan_goodsname_height">36px</dimen>
+    <dimen name="tv_jhk_juhaokan_goodsname_margin_top">12px</dimen>
+    <dimen name="tv_jhk_juhaokan_goodsname_text_size">30px</dimen>
+
+
+    <dimen name="tv_jhk_juhaokan_position_width">40px</dimen>
+    <dimen name="tv_jhk_juhaokan_position_height">40px</dimen>
+    <dimen name="tv_jhk_juhaokan_position_margin_top">60px</dimen>
+    <dimen name="tv_jhk_juhaokan_position_text_size">24px</dimen>
+
+
+    <!--rv_item_jhk_movie_details_header-->
+
+    <dimen name="iv_jhk_mdetails_movieimg_width">204px</dimen>
+    <dimen name="iv_jhk_mdetails_movieimg_height">288px</dimen>
+    <dimen name="iv_jhk_mdetails_movieimg_margin_left">36px</dimen>
+    <dimen name="iv_jhk_mdetails_movieimg_margin_top">36px</dimen>
+    <dimen name="iv_jhk_mdetails_movieimg_margin_bottom">36px</dimen>
+
+
+    <dimen name="tv_jhk_mdetails_name_height">60px</dimen>
+    <dimen name="tv_jhk_mdetails_name_text_size">40px</dimen>
+
+
+    <dimen name="tv_jhk_mdetails_review_height">60px</dimen>
+    <dimen name="tv_jhk_mdetails_review_margin_left">12px</dimen>
+    <dimen name="tv_jhk_mdetails_review_text_size">48px</dimen>
+
+
+    <dimen name="tv_jhk_mdetails_type_width">0px</dimen>
+    <dimen name="tv_jhk_mdetails_type_margin_top">12px</dimen>
+    <dimen name="tv_jhk_mdetails_type_text_size">30px</dimen>
+
+    <dimen name="tv_jhk_mdetails_content_width">0px</dimen>
+    <dimen name="tv_jhk_mdetails_content_height">0px</dimen>
+    <dimen name="tv_jhk_mdetails_content_margin_top">12px</dimen>
+    <dimen name="tv_jhk_mdetails_content_margin_right">36px</dimen>
+    <dimen name="tv_jhk_mdetails_content_margin_left">36px</dimen>
+    <dimen name="tv_jhk_mdetails_content_text_size">30px</dimen>
+
+    <dimen name="iv_jhk_mdetails_qrcode_width">256px</dimen>
+    <dimen name="iv_jhk_mdetails_qrcode_height">256px</dimen>
+    <dimen name="iv_jhk_mdetails_qrcode_margin_top">12px</dimen>
+    <dimen name="iv_jhk_mdetails_qrcode_margi_right">36px</dimen>
+
+
+    <dimen name="tv_jhk_mdetails_sweepcode_width">0px</dimen>
+    <dimen name="tv_jhk_mdetails_sweepcode_height">30px</dimen>
+    <dimen name="tv_jhk_mdetails_sweepcode_margin_top">36px</dimen>
+    <dimen name="tv_jhk_mdetails_sweepcode_text_size">24px</dimen>
+
+    <dimen name="iv_jhk_mdetails_datafrom_width">36px</dimen>
+    <dimen name="iv_jhk_mdetails_datafrom_height">36px</dimen>
+    <dimen name="iv_jhk_mdetails_datafrom_margin_top">12px</dimen>
+
+    <dimen name="tv_jhk_mdetails_from_margin_right">12px</dimen>
+
+
+</resources>

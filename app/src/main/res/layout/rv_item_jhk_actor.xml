@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bv_jhk_actor"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_jhk_actor_portrait"
+        android:layout_width="@dimen/iv_jhk_actor_portrait_width"
+        android:layout_height="@dimen/iv_jhk_actor_portrait_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv_jhk_actor_name"
+        android:layout_width="@dimen/tv_jhk_actor_name_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_jhk_actor_name_margin_top"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_actor_name_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_actor_portrait"
+
+
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_actor_portrait"
+        app:layout_constraintTop_toBottomOf="@+id/iv_jhk_actor_portrait" />
+
+
+    <TextView
+        android:id="@+id/tv_jhk_actor_role"
+        android:layout_width="@dimen/tv_jhk_actor_role_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_jhk_actor_role_margin_top"
+        android:layout_marginBottom="36dp"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textColor="#99f1f1f1"
+        android:textSize="@dimen/tv_jhk_actor_role_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_actor_portrait"
+
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_actor_portrait"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_actor_name" />
+
+    <View
+        android:id="@+id/tv_common_border"
+        android:layout_width="@dimen/tv_common_border_width"
+        android:layout_height="@dimen/tv_common_border_height"
+        android:background="@drawable/rv_item_0901_group_border"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_actor_portrait"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_actor_portrait"
+
+
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_actor_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_actor_portrait" />
+
+
+    <TextView
+        android:id="@+id/tv_jhk_actor_position"
+        android:layout_width="@dimen/tv_jhk_actor_position_width"
+        android:layout_height="@dimen/tv_jhk_actor_position_height"
+        android:layout_marginStart="@dimen/tv_jhk_actor_position_margin_start"
+        android:layout_marginLeft="@dimen/tv_jhk_actor_position_margin_start"
+        android:layout_marginTop="@dimen/tv_jhk_actor_position_margin_top"
+        android:background="@drawable/rv_item_0901_group_position"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="center"
+        android:textColor="#055c66"
+        android:textSize="@dimen/tv_jhk_actor_position_text_size"
+
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_actor_portrait"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_actor_portrait" />
+
+
+</android.support.constraint.ConstraintLayout>

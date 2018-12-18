@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scl_jhk_juhaokan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_jhk_juhaokan_goodsimag"
+        android:layout_width="@dimen/iv_jhk_juhaokan_goodsimag_width"
+        android:layout_height="@dimen/iv_jhk_juhaokan_goodsimag_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_jhk_juhaokan_price"
+        android:layout_width="@dimen/tv_jhk_juhaokan_price_width"
+        android:layout_height="@dimen/tv_jhk_juhaokan_price_height"
+        android:background="@drawable/rv_item_1201_group_bac"
+        android:layout_marginBottom="@dimen/tv_jhk_juhaokan_price_margin_bottom"
+        android:paddingLeft="@dimen/tv_jhk_juhaokan_price_margin_left"
+        android:paddingRight="@dimen/tv_jhk_juhaokan_price_margin_right"
+        android:textColor="#f1f1f1"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_juhaokan_goodsimag"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_juhaokan_goodsimag"
+
+        />
+
+
+    <com.hisense.pagedemo.ui.DeleteLineTextView
+        android:id="@+id/tv_jhk_juhaokan_originalprice"
+        android:layout_width="@dimen/tv_jhk_juhaokan_originalprice_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tv_jhk_juhaokan_originalprice_margin_bottom"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv_jhk_juhaokan_price"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_juhaokan_goodsimag"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_juhaokan_goodsimag"
+
+        android:layout_marginLeft="@dimen/tv_jhk_juhaokan_originalprice_margin_left"
+        android:layout_marginRight="@dimen/tv_jhk_juhaokan_originalprice_margin_right"
+
+
+        android:textSize="@dimen/tv_jhk_juhaokan_originalprice_text_size"
+        android:textColor="#000000"
+        android:gravity="start|center_vertical"
+
+        android:background="#a3a3"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_jhk_juhaokan_goodsname"
+        android:layout_width="@dimen/tv_jhk_juhaokan_goodsname_width"
+        android:layout_height="@dimen/tv_jhk_juhaokan_goodsname_height"
+
+        app:layout_constraintTop_toBottomOf="@+id/iv_jhk_juhaokan_goodsimag"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_juhaokan_goodsimag"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_juhaokan_goodsimag"
+
+        android:layout_marginTop="@dimen/tv_jhk_juhaokan_goodsname_margin_top"
+
+        android:textSize="@dimen/tv_jhk_juhaokan_goodsname_text_size"
+        android:textColor="#f1f1f1"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/tv_common_border"
+        android:layout_width="@dimen/tv_common_border_width"
+        android:layout_height="@dimen/tv_common_border_height"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_juhaokan_goodsimag"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_juhaokan_goodsimag"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_juhaokan_goodsimag"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_juhaokan_goodsimag"
+
+        android:visibility="gone"
+        android:background="@drawable/rv_item_0801_group_border"
+        />
+    <View
+        android:id="@+id/temp_rv_item_1201"
+        android:layout_width="2px"
+        android:layout_height="20px"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="@+id/iv_jhk_juhaokan_goodsimag"
+        android:layout_marginRight="20px"
+
+
+        />
+    <TextView
+        android:id="@+id/tv_jhk_juhaokan_position"
+        android:layout_width="@dimen/tv_jhk_juhaokan_position_width"
+        android:layout_height="@dimen/tv_jhk_juhaokan_position_height"
+        app:layout_constraintLeft_toRightOf="@+id/temp_rv_item_1201"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_juhaokan_goodsimag"
+        android:layout_marginTop="@dimen/tv_jhk_juhaokan_position_margin_top"
+        android:background="@drawable/rv_item_1101_group_position"
+        android:gravity="center"
+        android:textSize="@dimen/tv_jhk_juhaokan_position_text_size"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hisense.pagedemo.ui.SelectConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scl_rvitem_1101_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#a3a3"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_rvitem_1101_group_portrait"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_rvitem_1101_group_portrait"
+        app:layout_constraintRight_toRightOf="@+id/tv_rvitem_1101_group_position"
+        app:layout_constraintTop_toTopOf="@+id/iv_rvitem_1101_group_portrait"
+        />
+
+    <ImageView
+        android:id="@+id/iv_rvitem_1101_group_portrait"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_rvitem_1101_group_goodsname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+
+        android:textSize="30px"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/iv_rvitem_1101_group_portrait"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_rvitem_1101_group_type"
+        app:layout_constraintTop_toTopOf="@+id/iv_rvitem_1101_group_portrait" />
+
+
+    <TextView
+        android:id="@+id/tv_rvitem_1101_group_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:textSize="24px"
+        android:layout_marginTop="3dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv_rvitem_1101_group_price"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintRight_toRightOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvitem_1101_group_goodsname"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_rvitem_1101_group_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.5dp"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:textSize="30px"
+
+        app:layout_constraintLeft_toLeftOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintRight_toRightOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvitem_1101_group_goodsname"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv_rvitem_1101_group_free"
+        />
+
+    <TextView
+        android:id="@+id/tv_rvitem_1101_group_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f1f1f1"
+        android:textSize="20px"
+        android:layout_marginTop="3dp"
+
+        app:layout_constraintLeft_toLeftOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvitem_1101_group_price"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_rvitem_1101_group_shoppinginfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:layout_marginTop="3dp"
+
+        android:textSize="24px"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintRight_toRightOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rvitem_1101_group_free"
+
+
+        />
+    <View
+        android:id="@+id/temp1"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="@+id/tv_rvitem_1101_group_goodsname"
+        app:layout_constraintTop_toTopOf="@+id/tv_rvitem_1101_group_goodsname"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+
+    <View
+        android:id="@+id/tv_common_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:visibility="gone"
+        android:background="@drawable/rv_item_0801_group_border"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_rvitem_1101_group_portrait"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_rvitem_1101_group_portrait"
+        app:layout_constraintRight_toRightOf="@+id/tv_rvitem_1101_group_position"
+        app:layout_constraintTop_toTopOf="@+id/iv_rvitem_1101_group_portrait"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_rvitem_1101_group_position"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="37.5dp"
+        android:background="@drawable/rv_item_1101_group_position"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:textSize="30px"
+        app:layout_constraintLeft_toRightOf="@+id/temp1"
+        app:layout_constraintTop_toTopOf="@+id/iv_rvitem_1101_group_portrait"
+
+
+        />
+
+
+</com.hisense.pagedemo.ui.SelectConstraintLayout>

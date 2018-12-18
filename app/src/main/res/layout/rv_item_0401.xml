@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorBlack"
+    android:id="@+id/ll_rvitem_0401"
+    >
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_rvitem_040101"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:text="热门(30)"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="16dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginStart="20dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/tv_rvitem_040102"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_rvitem_040102"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:text="电影(200)"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="16dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+
+        <!--app:layout_constraintLeft_toRightOf="@+id/tv_rvitem_040101"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/tv_rvitem_040101"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/tv_rvitem_040103"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_rvitem_040103"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:text="电视剧(6)"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="16dp"-->
+        <!--android:gravity="center"-->
+
+        <!--app:layout_constraintLeft_toRightOf="@+id/tv_rvitem_040102"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/tv_rvitem_040101"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/tv_rvitem_040104"-->
+        <!--/>-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_rvitem_040104"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:text="综艺(20)"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="16dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+
+        <!--app:layout_constraintLeft_toRightOf="@+id/tv_rvitem_040103"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/tv_rvitem_040101"-->
+        <!--app:layout_constraintRight_toLeftOf="@+id/tv_rvitem_040105"-->
+        <!--/>-->
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_rvitem_040105"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="38dp"-->
+        <!--android:text="演唱会(3)"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="16dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+
+        <!--app:layout_constraintLeft_toRightOf="@+id/tv_rvitem_040104"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/tv_rvitem_040101"-->
+        <!--/>-->
+
+
+
+</LinearLayout>

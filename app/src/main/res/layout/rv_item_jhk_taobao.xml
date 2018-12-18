@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scl_jhk_taobao"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_common_border_taobao"
+        android:layout_width="@dimen/tv_common_border_width"
+        android:layout_height="@dimen/tv_common_border_height"
+        android:layout_marginEnd="@dimen/tv_common_border_taobao_margin_end"
+        android:layout_marginRight="@dimen/tv_common_border_taobao_margin_end"
+        android:background="#a3a3"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_taobao_portrait"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_taobao_portrait"
+        app:layout_constraintRight_toRightOf="@+id/tv_jhk_taobao_position"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_taobao_portrait"
+        />
+
+    <ImageView
+        android:id="@+id/iv_jhk_taobao_portrait"
+        android:layout_width="@dimen/iv_jhk_taobao_portrait_width"
+        android:layout_height="@dimen/iv_jhk_taobao_portrait_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_jhk_taobao_goodsname"
+        android:layout_width="@dimen/tv_jhk_taobao_goodsname_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tv_jhk_taobao_goodsname_margin_start"
+        android:layout_marginLeft="@dimen/tv_jhk_taobao_goodsname_margin_start"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:layout_marginEnd="@dimen/tv_jhk_taobao_goodsname_margin_end"
+        android:layout_marginRight="@dimen/tv_jhk_taobao_goodsname_margin_end"
+
+        android:textSize="@dimen/tv_jhk_taobao_goodsname_text_size"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/iv_jhk_taobao_portrait"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_jhk_taobao_type"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_taobao_portrait" />
+
+
+    <TextView
+        android:id="@+id/tv_jhk_taobao_type"
+        android:layout_width="@dimen/tv_jhk_taobao_type_width"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_taobao_type_text_size"
+        android:layout_marginTop="@dimen/tv_jhk_taobao_type_margin_top"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv_jhk_taobao_price"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintRight_toRightOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_taobao_goodsname"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_jhk_taobao_price"
+        android:layout_width="@dimen/tv_jhk_taobao_price_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_jhk_taobao_price_margin_top"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_taobao_price_text_size"
+
+        app:layout_constraintLeft_toLeftOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintRight_toRightOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_taobao_goodsname"
+
+        app:layout_constraintBottom_toTopOf="@+id/tv_jhk_taobao_free"
+        />
+
+    <TextView
+        android:id="@+id/tv_jhk_taobao_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#f1f1f1"
+        android:textSize="@dimen/tv_jhk_taobao_free_text_size"
+        android:layout_marginTop="@dimen/tv_jhk_taobao_free_margin_top"
+
+        app:layout_constraintLeft_toLeftOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_taobao_price"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tv_jhk_taobao_shoppinginfo"
+        android:layout_width="@dimen/tv_jhk_taobao_shoppinginfo_width"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left"
+        android:textColor="#f1f1f1"
+        android:layout_marginTop="@dimen/tv_jhk_taobao_shoppinginfo_margin_top"
+
+        android:textSize="@dimen/tv_jhk_taobao_shoppinginfo_text_size"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintRight_toRightOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_jhk_taobao_free"
+
+
+        />
+    <View
+        android:id="@+id/temp1"
+        android:layout_width="1px"
+        android:layout_height="20px"
+        android:visibility="invisible"
+        app:layout_constraintRight_toRightOf="@+id/tv_jhk_taobao_goodsname"
+        app:layout_constraintTop_toTopOf="@+id/tv_jhk_taobao_goodsname"
+        android:layout_marginRight="30px"
+        android:layout_marginEnd="30px"
+        />
+
+
+    <View
+        android:id="@+id/tv_common_border"
+        android:layout_width="@dimen/tv_common_border_width"
+        android:layout_height="@dimen/tv_common_border_height"
+        android:layout_marginEnd="30px"
+        android:layout_marginRight="30px"
+        android:visibility="gone"
+        android:background="@drawable/rv_item_0801_group_border"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_jhk_taobao_portrait"
+        app:layout_constraintLeft_toLeftOf="@+id/iv_jhk_taobao_portrait"
+        app:layout_constraintRight_toRightOf="@+id/tv_jhk_taobao_position"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_taobao_portrait"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_jhk_taobao_position"
+        android:layout_width="@dimen/tv_jhk_taobao_position_width"
+        android:layout_height="@dimen/tv_jhk_taobao_position_height"
+        android:layout_marginTop="@dimen/tv_jhk_taobao_position_margin_top"
+        android:background="@drawable/rv_item_1101_group_position"
+        android:gravity="center"
+        android:textColor="#000000"
+
+        android:textSize="@dimen/tv_jhk_taobao_position_text_size"
+        app:layout_constraintLeft_toRightOf="@+id/temp1"
+        app:layout_constraintTop_toTopOf="@+id/iv_jhk_taobao_portrait"
+
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

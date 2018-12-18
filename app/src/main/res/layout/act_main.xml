@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/specbgoverlayfull"
+    tools:context=".ActMainActivity">
+
+    <android.support.constraint.Group
+        android:id="@+id/group_act_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="tv_act_main_1,
+tv_act_main_2,
+tv_act_main_3,
+tv_act_main_4,
+tv_act_main_5,
+tv_act_main_6,
+tv_act_main_7,
+tv_act_main_8,
+tv_act_main_9,
+tv_act_main_10,
+tv_act_main_11,
+tv_act_main_12,
+tv_act_main_13,
+tv_act_main_14,
+tv_act_main_15,
+tv_act_main_16,
+tv_act_main_17,
+tv_act_main_18,
+tv_act_main_19,
+tv_act_main_20
+"
+
+        />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="04.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/tv_act_main_6"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+
+
+        />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="05电影.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_1"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_3"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_1" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="06电影.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_2"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_4"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_1" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="07电影.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_3"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_5"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_1" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="08应用.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_1"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_1" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_6"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="09演员.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/prv_act_main"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_7"
+        app:layout_constraintTop_toBottomOf="@id/tv_act_main_1"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="10电影.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_6"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_6"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_8"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_6" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="11购物.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_6"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_7"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_9"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_6" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="12购物.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_6"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_8"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_10"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_6" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="18详情电影.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_6"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_6" />
+
+
+    <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_11"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="04Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_act_main_16"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_12"
+        app:layout_constraintTop_toBottomOf="@id/tv_act_main_6"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="05电影Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_11"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_11"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_13"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_11" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="06电影Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_11"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_12"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_14"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_11" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="07电影Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_11"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_13"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_15"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_11" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="08应用Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_11"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_9"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_11" />
+
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_16"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="09演员Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/prv_act_main"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_17"
+        app:layout_constraintTop_toBottomOf="@id/tv_act_main_11"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="10电影Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_16"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_16"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_18"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_16" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="11购物Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_16"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_17"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_19"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_16" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_19"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="12购物Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_16"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_18"
+        app:layout_constraintRight_toLeftOf="@+id/tv_act_main_20"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_16" />
+
+    <com.hisense.pagedemo.ui.TempTextView
+        android:id="@+id/tv_act_main_20"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:text="18详情电影Group.png"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_act_main_16"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/tv_act_main_14"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_act_main_16" />
+    <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+
+
+    <com.hisense.pagedemo.ui.PageRecyclerView
+        android:id="@+id/prv_act_main"
+        android:layout_width="1792px"
+        android:layout_height="0dp"
+        android:clipChildren="false"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_act_main_16"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+
+        app:layout_constraintVertical_weight="1"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

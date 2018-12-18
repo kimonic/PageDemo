@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_rv_header_06_recommend"
+        android:layout_width="1792px"
+        android:layout_height="180px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="60px"
+        android:layout_marginEnd="60px"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_rv_header_06_recommend"
+        android:layout_width="60px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="26px"
+        android:textColor="#ffffff"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="1732px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="推荐"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>
