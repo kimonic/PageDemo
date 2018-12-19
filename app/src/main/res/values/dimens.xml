@@ -2,48 +2,48 @@
     <dimen name="ass">0px</dimen>
 
     <!--rv_item_jhk_game-->
-    <dimen name="iv_jhk_app_movie_width">320px</dimen>
-    <dimen name="iv_jhk_app_movie_height">180px</dimen>
+    <dimen name="iv_jhk_game_movie_width">320px</dimen>
+    <dimen name="iv_jhk_game_movie_height">180px</dimen>
 
-    <dimen name="iv_jhk_app_flag_width">84px</dimen>
-    <dimen name="iv_jhk_app_flag_height">84px</dimen>
+    <dimen name="iv_jhk_game_flag_width">84px</dimen>
+    <dimen name="iv_jhk_game_flag_height">84px</dimen>
 
-    <dimen name="tv_jhk_app_review_width">48px</dimen>
-    <dimen name="tv_jhk_app_review_height">32px</dimen>
-    <dimen name="tv_jhk_app_review_margin_top">12px</dimen>
-    <dimen name="tv_jhk_app_review_margin_end">12px</dimen>
+    <dimen name="tv_jhk_game_review_width">48px</dimen>
+    <dimen name="tv_jhk_game_review_height">32px</dimen>
+    <dimen name="tv_jhk_game_review_margin_top">12px</dimen>
+    <dimen name="tv_jhk_game_review_margin_end">12px</dimen>
 
-    <dimen name="tv_jhk_app_bac_width">0px</dimen>
-    <dimen name="tv_jhk_app_bac_height">30px</dimen>
+    <dimen name="tv_jhk_game_bac_width">0px</dimen>
+    <dimen name="tv_jhk_game_bac_height">30px</dimen>
 
-    <dimen name="tv_jhk_app_bottom_1_width">0px</dimen>
-    <dimen name="tv_jhk_app_bottom_1_height">32px</dimen>
-    <dimen name="tv_jhk_app_bottom_1_margin_left">12px</dimen>
-    <dimen name="tv_jhk_app_bottom_1_margin_bottom">12px</dimen>
-    <dimen name="tv_jhk_app_bottom_1_margin_right">12px</dimen>
-    <dimen name="tv_jhk_app_bottom_1_text_size">24px</dimen>
+    <dimen name="tv_jhk_game_bottom_1_width">0px</dimen>
+    <dimen name="tv_jhk_game_bottom_1_height">32px</dimen>
+    <dimen name="tv_jhk_game_bottom_1_margin_left">12px</dimen>
+    <dimen name="tv_jhk_game_bottom_1_margin_bottom">12px</dimen>
+    <dimen name="tv_jhk_game_bottom_1_margin_right">12px</dimen>
+    <dimen name="tv_jhk_game_bottom_1_text_size">24px</dimen>
 
-    <dimen name="tv_jhk_app_bottom_2_width">0px</dimen>
-    <dimen name="tv_jhk_app_bottom_2_height">32px</dimen>
-    <dimen name="tv_jhk_app_bottom_2_margin_end">12px</dimen>
-    <dimen name="tv_jhk_app_bottom_2_margin_bottom">12px</dimen>
-    <dimen name="tv_jhk_app_bottom_2_text_size">24px</dimen>
+    <dimen name="tv_jhk_game_bottom_2_width">0px</dimen>
+    <dimen name="tv_jhk_game_bottom_2_height">32px</dimen>
+    <dimen name="tv_jhk_game_bottom_2_margin_end">12px</dimen>
+    <dimen name="tv_jhk_game_bottom_2_margin_bottom">12px</dimen>
+    <dimen name="tv_jhk_game_bottom_2_text_size">24px</dimen>
 
-    <dimen name="tv_jhk_app_name_width">24px</dimen>
-    <dimen name="tv_jhk_app_name_height">24px</dimen>
-    <dimen name="tv_jhk_app_name_margin_top">24px</dimen>
-    <dimen name="tv_jhk_app_name_margin_bottom">24px</dimen>
-    <dimen name="tv_jhk_app_name_text_size">24px</dimen>
+    <dimen name="tv_jhk_game_name_width">24px</dimen>
+    <dimen name="tv_jhk_game_name_height">24px</dimen>
+    <dimen name="tv_jhk_game_name_margin_top">24px</dimen>
+    <dimen name="tv_jhk_game_name_margin_bottom">24px</dimen>
+    <dimen name="tv_jhk_game_name_text_size">24px</dimen>
 
     <dimen name="tv_common_border_width">0px</dimen>
     <dimen name="tv_common_border_height">0px</dimen>
 
-    <dimen name="tv_jhk_app_position_width">44px</dimen>
-    <dimen name="tv_jhk_app_position_height">44px</dimen>
-    <dimen name="tv_jhk_app_position_margin_start">298px</dimen>
-    <dimen name="tv_jhk_app_position_margin_top">298px</dimen>
-    <dimen name="tv_jhk_app_position_text_size">68px</dimen>
-    <dimen name="tv_jhk_app_position">24px</dimen>
+    <dimen name="tv_jhk_game_position_width">44px</dimen>
+    <dimen name="tv_jhk_game_position_height">44px</dimen>
+    <dimen name="tv_jhk_game_position_margin_start">298px</dimen>
+    <dimen name="tv_jhk_game_position_margin_top">298px</dimen>
+    <dimen name="tv_jhk_game_position_text_size">68px</dimen>
+    <dimen name="tv_jhk_game_position">24px</dimen>
 
     <!--rv_item_jhk_actor-->
     <dimen name="iv_jhk_actor_portrait_width">180px</dimen>
@@ -201,5 +201,10 @@
 
     <dimen name="tv_jhk_mdetails_from_margin_right">12px</dimen>
 
+    <!--rv_item_jhk_movie_details_item    201812181149-->
+
+    <dimen name="tv_jhk_movie_details_item_title_height">60px</dimen>
+    <dimen name="tv_jhk_movie_details_item_title_margin_bottom">20px</dimen>
+    <dimen name="tv_jhk_movie_details_item_title_text_size">48px</dimen>
 
 </resources>

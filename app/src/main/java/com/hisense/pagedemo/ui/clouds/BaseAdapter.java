@@ -21,7 +21,7 @@ import java.util.List;
  * history：
  * ===================================================
  */
-public class BaseAdapter extends BaseQuickAdapter {
+public class BaseAdapter<T,K extends BaseViewHolder> extends BaseQuickAdapter<T,K> {
 
 
     public BaseAdapter(int layoutResId, @Nullable List data) {
@@ -37,12 +37,9 @@ public class BaseAdapter extends BaseQuickAdapter {
     }
 
     @Override
-    protected void convert(BaseViewHolder helper, Object item) {
+    protected void convert(K helper, T item) {
 
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, int i) {
 
-    }
 }
