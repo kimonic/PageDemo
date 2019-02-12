@@ -35,6 +35,7 @@ public class Test {
         list.add("客厅电脑");
         list.add("客厅电视");
         list.add("客厅空调");
+
         list.add("把一楼");
 
         //目标语句
