@@ -1,4 +1,4 @@
-package com.hisense.pagedemo.ui.clouds;
+package com.hisense.pagedemo.ui.clouds.date1218;
 
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;

@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SimpleItemAnimator;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
+import android.util.SparseIntArray;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -56,6 +57,10 @@ import com.hisense.pagedemo.handlefocus.HandleFocus10Single;
 import com.hisense.pagedemo.handlefocus.HandleFocus11;
 import com.hisense.pagedemo.handlefocus.HandleFocus12;
 import com.hisense.pagedemo.handlefocus.handle18.HandleFocus18;
+import com.hisense.pagedemo.testextends.Adapter1;
+import com.hisense.pagedemo.testextends.Adapter2;
+import com.hisense.pagedemo.testextends.BaseView;
+import com.hisense.pagedemo.testextends.MbaseView;
 import com.hisense.pagedemo.ui.item.IndicatorView;
 import com.hisense.pagedemo.ui.item.MovieInfoView;
 import com.hisense.pagedemo.ui.item.MoviePosterView;
@@ -63,6 +68,8 @@ import com.hisense.pagedemo.ui.PageRecyclerView;
 import com.hisense.pagedemo.ui.item.RecommendImageView;
 import com.hisense.pagedemo.ui.SelectConstraintLayout;
 import com.hisense.pagedemo.ui.TempTextView;
+import com.hisense.pagedemo.utils.FileUtils;
+import com.hisense.pagedemo.utils.LUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,6 +82,7 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
 
     private Group group;
 
+
     private List<List> listCollection;
 
     @Override
@@ -82,8 +90,71 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.act_main);
         listCollection = new ArrayList<>();
+
+        Log.e("dingzhixin", "获取路径---" + getFilesDir().getPath());
+        String path = FileUtils.getFilepath(this);
+        FileUtils.saveJsonToSDCard(this, "测试.txt", "的萨达的");
+        Log.e("dingzhixin", "获取路径---" + path);
         initView();
         initRecyclerView();
+
+        SparseIntArray array = new SparseIntArray();
+        for (int i = 0; i < 10; i++) {
+            array.put(i, i * 9);
+
+        }
+        for (int i = 0; i < array.size(); i++) {
+            Log.e("dingzhixin", "稀疏数组---001---??" + array.indexOfValue(9));
+            Log.e("dingzhixin", "稀疏数组---002---??" + array.get(i));
+
+        }
+//        Log.e("dingzhixin","稀疏数组------??"+array.indexOfValue(1));
+//        Log.e("dingzhixin","稀疏数组------??"+array.indexOfValue(2));
+//        Log.e("dingzhixin","稀疏数组------??"+array.indexOfValue(3));
+//        Log.e("dingzhixin","稀疏数组------??"+array.indexOfValue(4));
+        Log.e("dingzhixin", "稀疏数组------??" + array.get(0));
+        /**
+         public static final int KEYCODE_DPAD_UP = 19;
+         *public static final int KEYCODE_DPAD_DOWN = 20;
+         *public static final int KEYCODE_DPAD_LEFT = 21;
+         *public static final int KEYCODE_DPAD_RIGHT = 22;
+         *public static final int KEYCODE_DPAD_CENTER = 23;
+         public static final int KEYCODE_BACK = 4;
+         View.FOCUS_DOWN=130
+         View.FOCUS_UP=33
+         */
+        Log.e("dingzhixin", "-------FOCUS_DOWN-001----??"
+                + (MbaseView.class.isAssignableFrom(Adapter1.class)));
+        Log.e("dingzhixin", "-------FOCUS_DOWN-002----??"
+                + (BaseView.class.isAssignableFrom(Adapter1.class)));
+        Log.e("dingzhixin", "-------FOCUS_DOWN-003----??"
+                + (MbaseView.class.isAssignableFrom(Adapter2.class)));
+        Log.e("dingzhixin", "-------FOCUS_DOWN-004----??"
+                + (BaseView.class.isAssignableFrom(Adapter2.class)));
+        Log.e("dingzhixin", "-------FOCUS_DOWN-005----??"
+                + (Adapter1.class.isAssignableFrom(MbaseView.class)));
+
+        String content=FileUtils.readFileContent(this,"D:\\CopyRecyclerView.txt");
+        Log.e("dingzhixin111",content);
+        String str = "把,一楼,     ,打开".replace("客厅,电视", "客厅电视");
+    }
+
+    String str = "把,一楼,客,厅,电视fgfg,打开";
+
+    String str1 = "客厅电视";
+
+    private List<String> handleList(List<String> tips) {
+        LinearLayout linearLayout=new LinearLayout(this);
+        linearLayout.requestFocus();
+        if (tips.size() < 5) {
+            return tips;
+        } else {
+            for (int i = tips.size() - 1; i > 3; i--) {
+                Log.e("dingzhixin", "原来的大小-------dsds---------" + i);
+                tips.remove(i);
+            }
+            return tips;
+        }
     }
 
 
@@ -123,35 +194,35 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList = FalseData.getData04();
                                 list.addAll(tempList);
-                                notifyData(adapter04,tempList.size());
+                                notifyData(adapter04, tempList.size());
 //                                adapter04.notifyItemRangeChanged(2, tempList.size());
                                 break;
                             case 1:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList1 = FalseData.getData04Movie();
                                 list.addAll(tempList1);
-                                notifyData(adapter04,tempList1.size());
+                                notifyData(adapter04, tempList1.size());
 //                                adapter04.notifyItemRangeChanged(2, tempList1.size());
                                 break;
                             case 2:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList2 = FalseData.getData04Tv();
                                 list.addAll(tempList2);
-                                notifyData(adapter04,tempList2.size());
+                                notifyData(adapter04, tempList2.size());
 //                                adapter04.notifyItemRangeChanged(2, tempList2.size());
                                 break;
                             case 3:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList3 = FalseData.getData04Variety();
                                 list.addAll(tempList3);
-                                notifyData(adapter04,tempList3.size());
+                                notifyData(adapter04, tempList3.size());
 //                                adapter04.notifyItemRangeChanged(2, tempList3.size());
                                 break;
                             case 4:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList4 = FalseData.getData04VocalConcert();
                                 list.addAll(tempList4);
-                                notifyData(adapter04,tempList4.size());
+                                notifyData(adapter04, tempList4.size());
                                 break;
                         }
                     }
@@ -289,35 +360,35 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList = FalseData.getData04();
                                 list.addAll(tempList);
-                                notifyData(adapter04Group,tempList.size());
+                                notifyData(adapter04Group, tempList.size());
 //                                adapter04Group.notifyItemRangeChanged(2, tempList.size());
                                 break;
                             case 1:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList1 = FalseData.getData04Movie();
                                 list.addAll(tempList1);
-                                notifyData(adapter04Group,tempList1.size());
+                                notifyData(adapter04Group, tempList1.size());
 //                                adapter04Group.notifyItemRangeChanged(2, tempList1.size());
                                 break;
                             case 2:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList2 = FalseData.getData04Tv();
                                 list.addAll(tempList2);
-                                notifyData(adapter04Group,tempList2.size());
+                                notifyData(adapter04Group, tempList2.size());
 //                                adapter04Group.notifyItemRangeChanged(2, tempList2.size());
                                 break;
                             case 3:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList3 = FalseData.getData04Variety();
                                 list.addAll(tempList3);
-                                notifyData(adapter04Group,tempList3.size());
+                                notifyData(adapter04Group, tempList3.size());
 //                                adapter04Group.notifyItemRangeChanged(2, tempList3.size());
                                 break;
                             case 4:
                                 removeListDataFromPosition(list, 2);
                                 List<RVBean04> tempList4 = FalseData.getData04VocalConcert();
                                 list.addAll(tempList4);
-                                notifyData(adapter04Group,tempList4.size());
+                                notifyData(adapter04Group, tempList4.size());
 //                                adapter04Group.notifyItemRangeChanged(2, tempList4.size());
                                 break;
                         }
@@ -396,8 +467,6 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
     }
     //------------------------0506页面列表相关----------------group----------------end--------------
 
-
-    
 
     //------------------------07页面列表相关-------------------------------------start--------------
     private List<RVBean07> bean07List;
@@ -552,6 +621,7 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
 
 
     }
+
     //------------------------08页面列表相关--------------------------------end---------------------
     //------------------------08页面列表相关---------------自定义view-----------------start---------
     private List<RVBean08Single> bean08SingleList;
@@ -618,7 +688,7 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
         adapter10 = new RVAdapter10(bean10List);
         recyclerView.setAdapter(adapter10);
 
-        HandleFocus10 handleFocus10=new HandleFocus10(recyclerView,adapter10,bean10List);
+        HandleFocus10 handleFocus10 = new HandleFocus10(recyclerView, adapter10, bean10List);
         handleFocus10.handleFocus();
     }
 
@@ -637,7 +707,7 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
         adapter10Single = new RVAdapter10Single(bean10SingleList);
         recyclerView.setAdapter(adapter10Single);
 
-        HandleFocus10Single handleFocus10Single=new HandleFocus10Single(recyclerView,adapter10Single,bean10SingleList);
+        HandleFocus10Single handleFocus10Single = new HandleFocus10Single(recyclerView, adapter10Single, bean10SingleList);
         handleFocus10Single.handleFocus();
 
 
@@ -678,11 +748,11 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
         adapter11 = new RVAdapter11(bean11List);
         recyclerView.setAdapter(adapter11);
 
-        HandleFocus11 handleFocus11=new HandleFocus11(recyclerView,adapter11,bean11List);
+        HandleFocus11 handleFocus11 = new HandleFocus11(recyclerView, adapter11, bean11List);
         handleFocus11.handleFocus();
     }
-    
-    
+
+
     //------------------------11页面列表相关--------------------------自定义view---------end--------
 
 
@@ -700,7 +770,7 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
         recyclerView.setLayoutManager(manager);
         adapter12 = new RVAdapter12(bean12List);
         recyclerView.setAdapter(adapter12);
-        HandleFocus12 handleFocus12=new HandleFocus12(recyclerView,adapter12,bean12List);
+        HandleFocus12 handleFocus12 = new HandleFocus12(recyclerView, adapter12, bean12List);
         handleFocus12.handleFocus();
     }
     //------------------------12页面列表相关-----------------------------------end------------------
@@ -796,7 +866,6 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
         }
         return focused;
     }
-
 
 
     private void initView() {
@@ -1007,14 +1076,14 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
                     break;
                 case R.id.tv_act_main_20://18
                     //显示当前显示区域内的位置,直接获取recyclerview中的实际子view,位置赋值后刷新
-                    Log.e("Tag","当前recyclerviewview中的view数----"+recyclerView.getChildCount());
+                    Log.e("Tag", "当前recyclerviewview中的view数----" + recyclerView.getChildCount());
                     for (int i = 0; i < recyclerView.getChildCount(); i++) {
-                        View view=recyclerView.getChildAt(i);
-                        if (view instanceof ConstraintLayout){
-                            Log.e("Tag","当前recyclerviewview中的view数----"+view);
-                            ((MoviePosterView) ((ConstraintLayout) view).getChildAt(0)).setPosition(""+(100+i));
-                            Log.e("Tag","当前recyclerviewview中的view数----"
-                                    +((MoviePosterView) ((ConstraintLayout) view).getChildAt(0)).getPosition());
+                        View view = recyclerView.getChildAt(i);
+                        if (view instanceof ConstraintLayout) {
+                            Log.e("Tag", "当前recyclerviewview中的view数----" + view);
+                            ((MoviePosterView) ((ConstraintLayout) view).getChildAt(0)).setPosition("" + (100 + i));
+                            Log.e("Tag", "当前recyclerviewview中的view数----"
+                                    + ((MoviePosterView) ((ConstraintLayout) view).getChildAt(0)).getPosition());
                             ((MoviePosterView) ((ConstraintLayout) view).getChildAt(0)).invalidate();
                         }
                     }
@@ -1033,9 +1102,11 @@ public class ActMainActivity extends AppCompatActivity implements View.OnKeyList
         }
     }
 
-    /**发送广播*/
-    public void sendBrodcast(){
-        Intent intent=new Intent();
+    /**
+     * 发送广播
+     */
+    public void sendBrodcast() {
+        Intent intent = new Intent();
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.setAction("com.action.test.show.test6");
         sendBroadcast(intent);

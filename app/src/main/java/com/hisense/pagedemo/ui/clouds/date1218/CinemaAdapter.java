@@ -1,4 +1,4 @@
-package com.hisense.pagedemo.ui.clouds;
+package com.hisense.pagedemo.ui.clouds.date1218;
 
 import android.support.annotation.Nullable;
 import android.widget.ImageView;
@@ -9,7 +9,6 @@ import com.bumptech.glide.load.resource.bitmap.FitCenter;
 import com.bumptech.glide.request.RequestOptions;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.hisense.pagedemo.R;
-import com.hisense.pagedemo.ui.SelectConstraintLayout;
 
 import java.util.List;
 

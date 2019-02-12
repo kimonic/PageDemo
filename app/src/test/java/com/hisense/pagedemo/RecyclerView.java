@@ -256,7 +256,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
     /**
      * NotifyDataSetChanged or equal has been called.
      * If this is taking a long time, try sending granular notify adapter changes instead of just
-     * calling notifyDataSetChanged or setAdapter / swapAdapter. Adding stable ids to your adapter
+     * calling notifyDataSetChanged or setAdapter / swapAdapter. Adding stable ids to yo'ur adapter
      * might help.
      */
     private static final String TRACE_ON_DATA_SET_CHANGE_LAYOUT_TAG = "RV FullInvalidate";

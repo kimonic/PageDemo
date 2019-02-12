@@ -1,4 +1,4 @@
-package com.hisense.pagedemo.utils;
+package com.hisense.mylibrary;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -65,8 +65,7 @@ public class FileUtils {
      */
     public static void saveJsonToSDCard(Context context, String fileName, String content) {
 
-        Log.e("dingzhixin","-------"+getFilepath(context) );
-        File file = new File(getFilepath(context) + fileName);
+        File file = new File("D:\\"+fileName);
 
         FileOutputStream os = null;
         try {
@@ -119,7 +118,6 @@ public class FileUtils {
     public static String readFileContent(Context context, String fileName) {
 //        File file = new File(getFilepath(context) + fileName);
         File file = new File(fileName);
-        Log.e("dingzhixin111",""+file);
         if (file.exists()) {
             FileInputStream fis = null;
             InputStreamReader isr = null;
@@ -230,42 +228,42 @@ public class FileUtils {
 //    }
 
 
-    /**
-     * 保存方法
-     */
-    public static String saveBitmap(Bitmap bitmap) {
-
-        // 首先确定保存图片的目录
-        File appDir = new File(Environment.getExternalStorageDirectory(), "icon");
-        if (!appDir.exists()) {
-            if (!appDir.mkdir()) {
-            }
-        }
-        String fileName = "icon.jpg";
-
-        File f = new File(appDir, fileName);
-        if (f.exists()) {
-            f.delete();
-        }
-        Bitmap newBitmap;
-
-        if (bitmap.getRowBytes() * bitmap.getHeight() > 2091752) {
-            newBitmap = BitmapUtils.getCompressBitmap(bitmap);
-        } else {
-            newBitmap = bitmap;
-        }
-
-        try {
-            FileOutputStream out = new FileOutputStream(f);
-            newBitmap.compress(Bitmap.CompressFormat.PNG, 90, out);
-            out.flush();
-            out.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return f.getAbsolutePath();
-
-    }
+//    /**
+//     * 保存方法
+//     */
+//    public static String saveBitmap(Bitmap bitmap) {
+//
+//        // 首先确定保存图片的目录
+//        File appDir = new File(Environment.getExternalStorageDirectory(), "icon");
+//        if (!appDir.exists()) {
+//            if (!appDir.mkdir()) {
+//            }
+//        }
+//        String fileName = "icon.jpg";
+//
+//        File f = new File(appDir, fileName);
+//        if (f.exists()) {
+//            f.delete();
+//        }
+//        Bitmap newBitmap;
+//
+//        if (bitmap.getRowBytes() * bitmap.getHeight() > 2091752) {
+//            newBitmap = BitmapUtils.getCompressBitmap(bitmap);
+//        } else {
+//            newBitmap = bitmap;
+//        }
+//
+//        try {
+//            FileOutputStream out = new FileOutputStream(f);
+//            newBitmap.compress(Bitmap.CompressFormat.PNG, 90, out);
+//            out.flush();
+//            out.close();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return f.getAbsolutePath();
+//
+//    }
 
     public static String getIconDir() {
         // 首先确定保存图片的目录
@@ -278,18 +276,18 @@ public class FileUtils {
     }
 
 
-    /**
-     * 当外置存储卡不存在时会出错
-     */
-    public static void fileDir(Context context) {
-        LUtils.e(FileUtils.class, "logflag--------------" + context.getFilesDir());//SD卡内应用缓存目录
-        LUtils.e(FileUtils.class, "logflag -------------" + context.getCacheDir());//应用内缓存目录
-        LUtils.e(FileUtils.class, "logflag -------------" + context.getCacheDir().getPath());
-
-        LUtils.e(FileUtils.class, "logflag---------------" + context.getExternalCacheDir());//应用内缓存目录
-        LUtils.e(FileUtils.class, "logflag---------------" + context.getExternalCacheDir().getPath());
-        LUtils.e(FileUtils.class, "logflag---------------" + context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS));//SD卡内应用缓存目录
-        //以上目录都会在卸载时清空数据
-    }
+//    /**
+//     * 当外置存储卡不存在时会出错
+//     */
+//    public static void fileDir(Context context) {
+//        LUtils.e(FileUtils.class, "logflag--------------" + context.getFilesDir());//SD卡内应用缓存目录
+//        LUtils.e(FileUtils.class, "logflag -------------" + context.getCacheDir());//应用内缓存目录
+//        LUtils.e(FileUtils.class, "logflag -------------" + context.getCacheDir().getPath());
+//
+//        LUtils.e(FileUtils.class, "logflag---------------" + context.getExternalCacheDir());//应用内缓存目录
+//        LUtils.e(FileUtils.class, "logflag---------------" + context.getExternalCacheDir().getPath());
+//        LUtils.e(FileUtils.class, "logflag---------------" + context.getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS));//SD卡内应用缓存目录
+//        //以上目录都会在卸载时清空数据
+//    }
 
 }

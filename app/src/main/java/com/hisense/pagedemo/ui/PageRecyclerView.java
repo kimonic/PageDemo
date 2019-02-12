@@ -2,11 +2,14 @@ package com.hisense.pagedemo.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 
 import com.hisense.pagedemo.utils.LUtils;
 import com.hisense.pagedemo.utils.LogUtils;
@@ -27,7 +30,7 @@ import java.util.ArrayList;
  * history：
  * ===================================================
  */
-public class PageRecyclerView extends RecyclerView {
+public class PageRecyclerView extends CopyRecyclerViewN {
     public PageRecyclerView(Context context) {
         this(context, null, 0);
     }
@@ -44,6 +47,42 @@ public class PageRecyclerView extends RecyclerView {
 
 
     private void init() {
+        getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+
+                Log.e("dingzhixin","onGlobalLayout执行------------------------hisense111");
+            }
+        });
+        getViewTreeObserver().addOnDrawListener(new ViewTreeObserver.OnDrawListener() {
+            @Override
+            public void onDraw() {
+                Log.e("dingzhixin","onDraw执行------------------------hisense111");
+
+            }
+        });
+        getViewTreeObserver().addOnGlobalFocusChangeListener(new ViewTreeObserver.OnGlobalFocusChangeListener() {
+            @Override
+            public void onGlobalFocusChanged(View oldFocus, View newFocus) {
+                Log.e("dingzhixin","onGlobalFocusChanged执行-----oldFocus-------hisense111------------"+oldFocus);
+                Log.e("dingzhixin","onGlobalFocusChanged执行-------newFocus---------hisense111--------"+newFocus);
+
+            }
+        });
+        getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+            @Override
+            public boolean onPreDraw() {
+                Log.e("dingzhixin","onPreDraw执行------------------------hisense111");
+                return true;
+            }
+        });
+        getViewTreeObserver().addOnWindowFocusChangeListener(new ViewTreeObserver.OnWindowFocusChangeListener() {
+            @Override
+            public void onWindowFocusChanged(boolean hasFocus) {
+                Log.e("dingzhixin","onWindowFocusChanged执行------hasFocus----hisense111--------------"+hasFocus);
+
+            }
+        });
 
     }
 
@@ -60,12 +99,21 @@ public class PageRecyclerView extends RecyclerView {
     @Override
     public void addFocusables(ArrayList<View> views, int direction, int focusableMode) {
         super.addFocusables(views, direction, focusableMode);
-        LogUtils.outMethodInfo();
         if (viewsFocus==null){
             viewsFocus=new ArrayList<>();
         }
         viewsFocus.clear();
         viewsFocus.addAll(views);
+        LUtils.e(getClass(),"viewFocus的大小--addFocusables----"
+                +viewsFocus.size());
+    }
+
+    @Override
+    public int getDescendantFocusability() {
+        if (viewsFocus!=null)
+            LUtils.e(getClass(),"viewFocus的大小--getDescendantFocusability----"
+        +viewsFocus.size());
+        return super.getDescendantFocusability();
     }
 
     public ArrayList<View> getViewsFocus() {

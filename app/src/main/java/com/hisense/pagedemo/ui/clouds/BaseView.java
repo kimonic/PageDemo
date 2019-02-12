@@ -2,11 +2,11 @@ package com.hisense.pagedemo.ui.clouds;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.os.Build;
 import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
 import android.support.constraint.ConstraintLayout;
 import android.util.AttributeSet;
+
+import com.hisense.pagedemo.ui.clouds.date1218.BaseAdapter;
 
 /**
  * * ================================================

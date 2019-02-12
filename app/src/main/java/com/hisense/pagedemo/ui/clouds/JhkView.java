@@ -10,6 +10,7 @@ import android.view.View;
 import com.google.gson.Gson;
 import com.hisense.pagedemo.R;
 import com.hisense.pagedemo.temp.MovieBean;
+import com.hisense.pagedemo.ui.clouds.date1218.BaseAdapter;
 
 import java.util.List;
 
