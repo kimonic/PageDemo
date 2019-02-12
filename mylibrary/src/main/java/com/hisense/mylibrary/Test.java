@@ -43,7 +43,7 @@ public class Test {
         System.out.print("当前的位置是----??"+position);
         System.out.print("当前的位置是----??"+temp.substring(0,position));
 
-        String result;
+        String result;//
 
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals(temp.substring(position))){
